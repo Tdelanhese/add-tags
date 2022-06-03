@@ -1,0 +1,98 @@
+.home {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #222222;
+  color: whitesmoke;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+.tag-container {
+  width: 330px;
+  max-height: 65vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+
+  padding: 0.4rem;
+  overflow-x: auto;
+}
+
+input {
+  width: 100%;
+  border: 0;
+  border-bottom: 3px #004eff solid;
+  border-radius: 5px;
+  outline: none;
+  color: whitesmoke;
+  background: #222222;
+  height: 3rem;
+  padding: 5px;
+}
+
+.tag-container .tag {
+  border: 1px solid #3e3e3e;
+  border-bottom: solid #004eff;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+  max-width: 100%;
+  display: flex;
+}
+
+.tag-container .tag i {
+  margin: 5px;
+}
+
+.tag span {
+  max-width: 100%;
+  word-break: break-word;
+}
+
+main p {
+  margin: 1rem 0;
+}
+
+.limpar-todos {
+  padding: 0.25rem 1rem;
+  border-radius: 0.15rem;
+  background: transparent;
+  color: #fff;
+  border: 2px #004eff solid;
+  width: 100%;
+  margin-top: 1rem;
+  transition: all .5s;
+  outline: none;
+}
+
+button:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #004eff transparent;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 3.5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #004eff;
+  border-radius: 0px;
+}
